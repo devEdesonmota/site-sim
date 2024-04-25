@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+header img{ /*tamanho da imagem do cabeçalho*/
+    width: 100px;
+    margin-left: 14%;
+}
+
+header { /*Estilização do cabeçalho*/
+    padding: 2px;  /* Espaçamento interno */
+    width: 100%;
+    background-color:#4b7e5f;
+    box-shadow: 0px 2px 12px rgb(104, 104, 104); /*sombra do cabeçalho*/
+    position: fixed; /*fixando o cabeçalho*/
+    top: 0; /*retirando a margem de cima*/
+    z-index: 9;
+}
+
+.container-header-01 {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    margin-top: 40px;
+    margin-right: 50px;
+  }
+  
+  /* Estilizando os links da barra de navegação*/
+  .menu a {
+    color: #000000;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font: 1em sans-serif;
+  }
+
+  .menu a:hover {
+    background-color:#04AA6D ;
+  }
+  
+body{ /* Tamanho do corpo da pagina*/
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+.parte1{/*Estilização da primeira parte do corpo da pagina*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15%;
+    margin-bottom: 30px;
+}
+
+    strong{/*Marcação do texto dentro do paragrafo*/
+        color: rgb(54, 54, 143);
+    }
+
+    .conteudo_titulo{/*Estilização do titulo "O PROGRAMA"*/
+        font-size: 45px;
+        color: rgb(57, 172, 57);
+    }
+
+    .conteudo_paragrafo{/*Estilização do paragrafo*/
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+.clear{
+    clear: both;
+}
+
+
+
+.titulo-beneficio{    /*Estilização do titulo "BENEFICIO"*/
+    text-align: center;    /*centralizando texto*/
+    color: rgb(57, 172, 57);     /*cor do texto*/
+    font-size: 20px;    /*tamanho da fonte*/
+  }
+
+  .parte2{ /*Estlização da segunda parte da pagina*/
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  
+.topico{
+      width: 500px;
+      margin: 70px auto 0;
+      border-radius: 5px;
+      padding: 8px;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+      transition: all 0.6s cubic-bezier(0.165,0.84,0.44,1);
+      background-color: rgb(193, 245, 186);
+      display: inline-block;
+      
+}
+
+    .topico:hover{
+        background-color: rgb(221, 244, 172);
+        transform: scale(1.25,1.25);
+
+}
+.topico h2{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(34, 160, 34);
+    text-decoration: underline;
+
+}
+
+.topico p{
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+    
+  footer {
+    background-color: #141414; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    margin-top: 80px;
+}
+
+/* Estilizando os links no rodapé */
+footer a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remover sublinhado dos links */
+    margin: 0 10px; /* Espaçamento horizontal entre os links */
+}
+
+.conteiner-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+}
+footer img{
+    width: 150px;
+    margin-right:20%;
+}
+.informacoes{
+    margin-left: 20%;
+}
+.criadores p {
+    background-color: #0d382d;
+    padding: 5px;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+    /*DESIGN RESPONSIVO*/
+@media (max-width: 768px) {
+    header img {
+        width: 100px; /* Reduz o tamanho da imagem do cabeçalho */
+    }
+    
+    .menu {
+        margin-top: 20px; /* Reduz a margem superior do menu */
+        margin-right: 20px; /* Reduz a margem direita do menu */
+    }
+    
+    .menu a {
+        font-size: 14px; /* Reduz o tamanho da fonte dos links do menu */
+    }
+        
+    .conteudo_titulo {
+        font-size: 30px; /* Reduz o tamanho da fonte do título */
+    }
+    
+    .conteudo_paragrafo {
+        font-size: 16px; /* Reduz o tamanho da fonte do parágrafo */
+    }
+    
+    .topico {
+        width: 90%; /* Aumenta a largura dos tópicos */
+        margin: 20px auto 0; /* Aumenta a margem superior e centraliza */
+    }
+    
+    .topico h2 {
+        font-size: 18px; /* Reduz o tamanho da fonte do título do tópico */
+    }
+    
+    .topico p {
+        font-size: 14px; /* Reduz o tamanho da fonte do texto do tópico */
+    }
+    
+    footer img {
+        width: 150px; /* Reduz o tamanho do logotipo no rodapé */
+        margin-right: 10%; /* Reduz a margem direita do logotipo */
+    }
+    
+    .informacoes {
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+    
+    .criadores p {
+        font-size: 12px; /* Reduz o tamanho da fonte do rodapé */
+    }
+}
+
+@media (max-width: 1300px){
+  .parte1 {
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    margin: 10%; /* Reduz a margem */
+}
+}
